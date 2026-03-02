@@ -57,11 +57,11 @@ export function AIAssistantSection() {
                 <div className="bg-white/80 rounded-xl p-4 border border-primary/5">
                   <p className="text-xs font-medium text-muted mb-2 uppercase tracking-wider">Transcript</p>
                   <p className="text-sm text-foreground/80 leading-relaxed italic">
-                    &ldquo;Just had coffee with <span className="text-primary font-semibold not-italic">Sarah Miller</span>.
-                    She mentioned her team is launching a new product <span className="text-amber-600 font-semibold not-italic">next Thursday</span>.
-                    I should <span className="text-coral font-semibold not-italic">follow up with her about the partnership</span> after
-                    the launch. Oh, and <span className="text-purple-600 font-semibold not-italic">her birthday is March 15th</span> -
-                    I should remember that.&rdquo;
+                    &ldquo;Just had coffee with <span className="text-primary font-semibold not-italic">Sarah Miller</span>,
+                    it was really good. She&apos;s super busy with the product launch happening <span className="text-amber-600 font-semibold not-italic">next Thursday</span>.
+                    We talked about <span className="text-coral font-semibold not-italic">doing a partnership together</span>, she said
+                    to reach out after the launch settles down. Oh also she mentioned <span className="text-purple-600 font-semibold not-italic">her birthday is March 15th</span>,
+                    which is coming up pretty soon.&rdquo;
                   </p>
                 </div>
               </div>

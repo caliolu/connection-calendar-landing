@@ -78,8 +78,9 @@ export function HeroSection() {
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold text-foreground">You say:</p>
                     <p className="text-sm text-muted mt-1 leading-relaxed">
-                      &ldquo;Had coffee with Sarah. Her birthday is March 15th.
-                      I should follow up Thursday about the partnership.&rdquo;
+                      &ldquo;Had a great coffee with Sarah today. She told me her birthday is
+                      March 15th. We talked about a potential partnership, she said
+                      to circle back on Thursday after their launch.&rdquo;
                     </p>
                   </div>
                 </div>
