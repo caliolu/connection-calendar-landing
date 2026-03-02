@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Smartphone } from "lucide-react";
 import { AnimateOnView } from "./animate-on-view";
 
 function FloatingCard({
@@ -29,7 +30,15 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Copy */}
           <div className="text-center lg:text-left">
+            {/* Mobile app badge */}
             <AnimateOnView>
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
+                <Smartphone className="w-4 h-4" />
+                <span>Mobile App - Coming to iOS & Android</span>
+              </div>
+            </AnimateOnView>
+
+            <AnimateOnView delay={50}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
                 Remember everyone.{" "}
                 <span className="bg-gradient-to-r from-primary to-coral bg-clip-text text-transparent">
@@ -38,14 +47,15 @@ export function HeroSection() {
               </h1>
             </AnimateOnView>
 
-            <AnimateOnView delay={100}>
+            <AnimateOnView delay={150}>
               <p className="mt-6 text-lg text-muted leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Record a voice note after every conversation. AI extracts
-                contacts, dates, and follow-ups. Your calendar does the rest.
+                A mobile app that turns your voice notes into a relationship superpower.
+                Record a quick note after any conversation - your AI assistant extracts
+                names, dates, and follow-ups, then fills your calendar automatically.
               </p>
             </AnimateOnView>
 
-            <AnimateOnView delay={200}>
+            <AnimateOnView delay={250}>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
                   size="lg"
@@ -70,87 +80,106 @@ export function HeroSection() {
                 </Button>
               </div>
             </AnimateOnView>
+
+            <AnimateOnView delay={350}>
+              <p className="mt-4 text-xs text-muted/70">
+                Free to use. No credit card required.
+              </p>
+            </AnimateOnView>
           </div>
 
-          {/* Right: App mockup placeholder */}
+          {/* Right: Phone mockup */}
           <AnimateOnView variant="scale-in" delay={300}>
             <div className="relative mx-auto lg:mx-0 w-full max-w-sm">
               {/* Phone frame */}
               <div className="relative bg-gradient-to-br from-primary/10 via-coral/10 to-primary/5 rounded-[2.5rem] p-6 border border-primary/10 shadow-2xl shadow-primary/10">
-                <div className="bg-white rounded-[2rem] p-5 space-y-4 min-h-[380px]">
-                  {/* Mock header */}
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-coral" />
-                    <div>
-                      <div className="h-3 w-24 bg-foreground/10 rounded-full" />
-                      <div className="h-2 w-16 bg-foreground/5 rounded-full mt-1.5" />
+                {/* Notch */}
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 w-24 h-5 bg-foreground/5 rounded-full" />
+                <div className="bg-white rounded-[2rem] p-5 space-y-4 min-h-[400px]">
+                  {/* App header */}
+                  <div className="flex items-center justify-between pt-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-coral flex items-center justify-center">
+                        <span className="text-white text-[10px] font-bold">C</span>
+                      </div>
+                      <span className="text-xs font-bold text-foreground">Connection Calendar</span>
+                    </div>
+                    <div className="w-7 h-7 rounded-full bg-foreground/5 flex items-center justify-center">
+                      <div className="w-3 h-3 rounded-full bg-foreground/20" />
                     </div>
                   </div>
 
-                  {/* Mock cards */}
-                  <div className="space-y-3">
-                    <div className="bg-primary/5 rounded-xl p-3.5">
+                  {/* Voice recording card */}
+                  <div className="bg-primary/5 rounded-xl p-3.5">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 rounded-full bg-coral animate-[pulse-soft_2s_ease-in-out_infinite]" />
+                      <span className="text-xs font-medium text-primary">Recording voice note...</span>
+                    </div>
+                    <div className="flex gap-0.5 items-end h-6">
+                      {[...Array(24)].map((_, i) => (
+                        <div
+                          key={i}
+                          className="w-1 bg-primary/30 rounded-full"
+                          style={{
+                            height: `${6 + Math.sin(i * 0.7) * 8 + Math.random() * 6}px`,
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* AI extracted items */}
+                  <div className="space-y-2.5">
+                    <p className="text-[10px] font-semibold text-muted uppercase tracking-wider">AI Extracted</p>
+
+                    <div className="bg-amber-50 rounded-xl p-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-coral animate-[pulse-soft_2s_ease-in-out_infinite]" />
-                        <span className="text-xs font-medium text-primary">
-                          Voice note recorded
-                        </span>
+                        <span className="text-sm">&#128197;</span>
+                        <p className="text-xs font-medium text-amber-700">Follow-up: Sarah - Thursday</p>
                       </div>
-                      <div className="mt-2 flex gap-0.5">
-                        {[...Array(20)].map((_, i) => (
-                          <div
-                            key={i}
-                            className="w-1 bg-primary/30 rounded-full"
-                            style={{
-                              height: `${8 + Math.sin(i * 0.8) * 8 + Math.random() * 6}px`,
-                            }}
-                          />
-                        ))}
+                      <p className="text-[10px] text-amber-600/70 mt-0.5 ml-6">Added to calendar</p>
+                    </div>
+
+                    <div className="bg-purple-50 rounded-xl p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm">&#127874;</span>
+                        <p className="text-xs font-medium text-purple-700">Birthday: Tom - Mar 15</p>
                       </div>
+                      <p className="text-[10px] text-purple-600/70 mt-0.5 ml-6">Reminder set</p>
                     </div>
 
-                    <div className="bg-amber-50 rounded-xl p-3.5">
-                      <p className="text-xs font-medium text-amber-700">
-                        Follow-up: Sarah - Thursday
-                      </p>
-                      <p className="text-[11px] text-amber-600/70 mt-1">
-                        Discuss project timeline
-                      </p>
+                    <div className="bg-teal-50 rounded-xl p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm">&#128100;</span>
+                        <p className="text-xs font-medium text-teal-700">Contact updated: Sarah Miller</p>
+                      </div>
+                      <p className="text-[10px] text-teal-600/70 mt-0.5 ml-6">Last seen: today</p>
                     </div>
+                  </div>
 
-                    <div className="bg-purple-50 rounded-xl p-3.5">
-                      <p className="text-xs font-medium text-purple-700">
-                        Birthday: Tom, Mar 15
-                      </p>
-                      <p className="text-[11px] text-purple-600/70 mt-1">
-                        Reminder set for 2 days before
-                      </p>
+                  {/* Bottom nav mockup */}
+                  <div className="flex justify-around pt-2 border-t border-foreground/5">
+                    <div className="w-6 h-6 rounded-full bg-foreground/5" />
+                    <div className="w-10 h-10 -mt-3 rounded-full bg-gradient-to-br from-primary to-coral flex items-center justify-center shadow-lg">
+                      <div className="w-3 h-3 rounded-full bg-white" />
                     </div>
-
-                    <div className="bg-teal-50 rounded-xl p-3.5">
-                      <p className="text-xs font-medium text-teal-700">
-                        3 contacts updated
-                      </p>
-                      <p className="text-[11px] text-teal-600/70 mt-1">
-                        From your last 2 voice notes
-                      </p>
-                    </div>
+                    <div className="w-6 h-6 rounded-full bg-foreground/5" />
                   </div>
                 </div>
               </div>
 
               {/* Floating cards */}
               <FloatingCard
-                text="Voice note recorded"
+                text="&#127897; Voice note recorded"
                 className="animate-[float_4s_ease-in-out_infinite] -top-4 -right-4 sm:-right-8"
               />
               <FloatingCard
-                text="Follow-up: Sarah - Thursday"
-                className="animate-[float-delayed_5s_ease-in-out_infinite] top-1/3 -left-6 sm:-left-12"
+                text="&#128197; Follow-up added to calendar"
+                className="animate-[float-delayed_5s_ease-in-out_infinite] top-1/3 -left-6 sm:-left-16"
               />
               <FloatingCard
-                text="Birthday: Tom, Mar 15"
-                className="animate-[float_4.5s_ease-in-out_infinite] bottom-12 -right-4 sm:-right-10"
+                text="&#127874; Birthday reminder set"
+                className="animate-[float_4.5s_ease-in-out_infinite] bottom-16 -right-4 sm:-right-10"
               />
             </div>
           </AnimateOnView>

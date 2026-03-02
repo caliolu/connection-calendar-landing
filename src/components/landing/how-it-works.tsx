@@ -6,23 +6,23 @@ const steps = [
     number: "1",
     title: "Record",
     description:
-      "Finish a call or coffee? Tap record and talk for 30 seconds about what you discussed.",
+      "Open the app on your phone after any call, meeting, or coffee. Tap record and talk for 30 seconds about what happened.",
     Icon: Mic,
     gradient: "from-coral to-coral-dark",
   },
   {
     number: "2",
-    title: "AI Extracts",
+    title: "AI Understands",
     description:
-      "AI pulls out names, dates, follow-ups, and key details. No typing, no tagging.",
+      "Your AI assistant listens and extracts contacts, birthdays, follow-up dates, and action items. No typing, no manual entry.",
     Icon: Brain,
     gradient: "from-primary to-primary-dark",
   },
   {
     number: "3",
-    title: "Get Reminded",
+    title: "Calendar Fills Itself",
     description:
-      "Events and reminders appear on your calendar automatically. Never drop the ball.",
+      "Follow-ups, birthdays, and check-ins appear on your calendar automatically. You get notified at the right time.",
     Icon: Bell,
     gradient: "from-amber-400 to-amber-600",
   },

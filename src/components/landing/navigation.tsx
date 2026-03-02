@@ -6,10 +6,10 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { label: "Problem", href: "#problem" },
   { label: "How it Works", href: "#how-it-works" },
+  { label: "AI Assistant", href: "#ai-assistant" },
+  { label: "Calendar", href: "#calendar" },
   { label: "Features", href: "#features" },
-  { label: "Waitlist", href: "#waitlist" },
 ];
 
 export function Navigation() {
