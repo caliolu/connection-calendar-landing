@@ -60,8 +60,8 @@ export function AIAssistantSection() {
                     &ldquo;Just had coffee with <span className="text-primary font-semibold not-italic">Sarah Miller</span>.
                     She mentioned her team is launching a new product <span className="text-amber-600 font-semibold not-italic">next Thursday</span>.
                     I should <span className="text-coral font-semibold not-italic">follow up with her about the partnership</span> after
-                    the launch. Oh, and <span className="text-purple-600 font-semibold not-italic">Tom&apos;s birthday is March 15th</span> -
-                    need to remember to get him something.&rdquo;
+                    the launch. Oh, and <span className="text-purple-600 font-semibold not-italic">her birthday is March 15th</span> -
+                    I should remember that.&rdquo;
                   </p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export function AIAssistantSection() {
                     </div>
                     <div>
                       <p className="text-sm font-bold">Reminder Set</p>
-                      <p className="text-sm text-foreground mt-1">Tom&apos;s Birthday - March 15</p>
+                      <p className="text-sm text-foreground mt-1">Sarah&apos;s Birthday - March 15</p>
                       <div className="flex flex-wrap gap-2 mt-2">
                         <span className="text-[11px] bg-purple-50 text-purple-700 px-2 py-0.5 rounded-full">Reminder: 2 days before</span>
                         <span className="text-[11px] bg-purple-50 text-purple-700 px-2 py-0.5 rounded-full">Gift idea needed</span>

@@ -78,8 +78,8 @@ export function HeroSection() {
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold text-foreground">You say:</p>
                     <p className="text-sm text-muted mt-1 leading-relaxed">
-                      &ldquo;Had coffee with Sarah. Follow up Thursday about the partnership.
-                      Tom&apos;s birthday is March 15.&rdquo;
+                      &ldquo;Had coffee with Sarah. Her birthday is March 15th.
+                      I should follow up Thursday about the partnership.&rdquo;
                     </p>
                   </div>
                 </div>
@@ -92,27 +92,27 @@ export function HeroSection() {
 
                 {/* Step 2: AI extracts */}
                 <div className="space-y-3">
-                  <div className="flex items-center gap-3 bg-amber-50 rounded-xl px-4 py-3">
-                    <Calendar className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                  <div className="flex items-center gap-3 bg-teal-50 rounded-xl px-4 py-3">
+                    <Smartphone className="w-4 h-4 text-teal-600 flex-shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-sm font-medium text-amber-800">Follow up: Sarah</p>
-                      <p className="text-xs text-amber-600">Thursday - Added to calendar</p>
+                      <p className="text-sm font-medium text-teal-800">Sarah Miller</p>
+                      <p className="text-xs text-teal-600">Contact updated - Last seen: today</p>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-3 bg-purple-50 rounded-xl px-4 py-3">
                     <Bell className="w-4 h-4 text-purple-600 flex-shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-sm font-medium text-purple-800">Tom&apos;s Birthday</p>
+                      <p className="text-sm font-medium text-purple-800">Sarah&apos;s Birthday</p>
                       <p className="text-xs text-purple-600">March 15 - Reminder set</p>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 bg-teal-50 rounded-xl px-4 py-3">
-                    <Smartphone className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                  <div className="flex items-center gap-3 bg-amber-50 rounded-xl px-4 py-3">
+                    <Calendar className="w-4 h-4 text-amber-600 flex-shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-sm font-medium text-teal-800">Sarah Miller</p>
-                      <p className="text-xs text-teal-600">Contact updated - Last seen: today</p>
+                      <p className="text-sm font-medium text-amber-800">Follow up: Sarah</p>
+                      <p className="text-xs text-amber-600">Thursday - Added to calendar</p>
                     </div>
                   </div>
                 </div>

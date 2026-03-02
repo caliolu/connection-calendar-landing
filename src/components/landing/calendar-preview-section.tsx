@@ -13,7 +13,7 @@ const events: CalendarEvent[] = [
   { day: 3, title: "Follow up: Sarah", time: "2:00 PM", type: "follow-up" },
   { day: 5, title: "Check in: Mom", type: "check-in" },
   { day: 8, title: "Coffee with Alex", time: "10:30 AM", type: "meeting" },
-  { day: 10, title: "Tom's Birthday", type: "birthday" },
+  { day: 10, title: "Sarah's Birthday", type: "birthday" },
   { day: 12, title: "Follow up: Jake", time: "3:00 PM", type: "follow-up" },
   { day: 15, title: "Call: Dr. Lee", time: "11:00 AM", type: "meeting" },
   { day: 17, title: "Check in: David", type: "check-in" },
